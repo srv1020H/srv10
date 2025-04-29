@@ -1,0 +1,30 @@
+{
+  "name": "srv10",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tiny-sky-80f3-d1",
+      "database_id": "14cdd0f1-e7a1-4d5c-b706-9d1f8234758a"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "srv10-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
